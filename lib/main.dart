@@ -14,4 +14,10 @@ void main(List<String> args) {
 
   print("=== Escreva seu peso");
   pessoa.peso = double.parse(stdin.readLineSync()!);
+
+  print("------------------------------------\n");
+  
+  print("Nome: ${pessoa.nome}");
+  print("Imc: ${pessoa.imc()}");
+  print("Maior de idade: ${pessoa.maiorDeIdade()}");
 }
