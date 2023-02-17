@@ -6,17 +6,21 @@ class Pessoa {
   late double peso;
 
   //calcular imc
-  double imc(){
-    double imc = peso / (altura * altura);
-    return imc;
-  }
+  double imc() => peso / (altura * altura); // arrow function: executa e retorna o valor que der
+  // double imc(){
+  //   double imc = peso / (altura * altura);
+  //   return imc;
+  // }
 
   // se é maior de idade
-  bool maiorDeIdade(){
-    if(idade >= 18) {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  bool maiorDeIdade() => idade >= 18; //arrow function
+  // bool maiorDeIdade(){
+  //   return idade >= 18;
+
+    // if(idade >= 18) {
+    //   return true;
+    // } else {
+    //   return false;
+    // }
+  // }
 }
